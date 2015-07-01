@@ -56,8 +56,8 @@
 #include "aes-protocol.h"
 #include "sync.h"
 
-#define FFMPEG_LOG_LEVEL AV_LOG_WARNING
-#define LOG_LEVEL 2
+#define FFMPEG_LOG_LEVEL AV_LOG_DEBUG
+#define LOG_LEVEL 100
 #define LOG_TAG "player.c"
 #define LOGI(level, ...) if (level <= LOG_LEVEL) {__android_log_print(ANDROID_LOG_INFO, LOG_TAG, __VA_ARGS__);}
 #define LOGE(level, ...) if (level <= LOG_LEVEL + 10) {__android_log_print(ANDROID_LOG_ERROR, LOG_TAG, __VA_ARGS__);}
